@@ -1,0 +1,122 @@
+/* Default Theme */
+:root {
+	--background-color: #ffffff;
+	--text-color: #333333;
+	--primary-color: #007bff;
+	--secondary-color: #6c757d;
+	--accent-color: #6c757d;
+	--off-white: #f8f9fa;
+	--grey: #6c757d;
+	--grey-light: #f1f1f1;
+	--error-color: #ff0000;
+}
+
+/* Light Mode */
+body.light-mode {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+/* Headers */
+.light-mode .tj-header-area.header-2 {
+	background-color: var(--off-white);
+}
+.light-mode .tj-header-area .menu-bar button span {
+	background-color: var(--primary-color);
+}
+
+/* Hero Section */
+.light-mode .hero-section {
+	background-color: var(--background-color);
+}
+.light-mode .hero-image-box img {
+	border: 2px solid var(--off-white);
+}
+.light-mode .hero-image-box img:hover {
+	border-color: var(--primary-color);
+}
+.light-mode .hero-sub-title,
+.light-mode .hero-title {
+	background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Services Section */
+.light-mode .services-section {
+	background-color: var(--off-white);
+}
+.light-mode .services-widget .service-item {
+	border-bottom: 1px solid var(--grey-light);
+}
+.light-mode .services-widget .service-item:hover .left-box .service-title,
+.light-mode .services-widget .service-item:hover .right-box p {
+	color: var(--primary-color);
+}
+
+/* Portfolio Section */
+.light-mode .portfolio-section {
+	background-color: var(--background-color);
+}
+
+/* Resume Section */
+.light-mode .resume-section {
+	background-color: var(--off-white);
+}
+
+/* Skills Section */
+.light-mode .skills-section {
+	background-color: var(--background-color);
+}
+
+/* Testimonials Section */
+.light-mode .testimonial-section {
+	background-color: var(--off-white);
+}
+
+/* Blog Section */
+.light-mode .blog-section {
+	background-color: var(--background-color);
+}
+
+/* Contact Section */
+.light-mode .contact-section {
+	background-color: var(--off-white);
+}
+
+/* Footer Area */
+.light-mode .tj-footer-area {
+	background-color: var(--secondary-color);
+}
+
+/* Blog Standard Page */
+.light-mode .tj-posts__area {
+	background-color: var(--off-white);
+}
+.light-mode .tj__pagination ul li .page-numbers,
+.light-mode .tj__pagination ul li .page-numbers:hover,
+.light-mode .tj__pagination ul li .page-numbers.current {
+	background-color: var(--primary-color);
+}
+
+/* Blog Details Page */
+.light-mode .tj-post-details__area {
+	background-color: var(--off-white);
+}
+.light-mode .tj-post__meta span,
+.light-mode .tj-post__content .tj-post__title {
+	color: var(--primary-color);
+}
+
+/* Breadcrumb Area */
+.light-mode .breadcrumb_navigation i {
+	color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (max-width: 767px) {
+	.light-mode .tj-header-area .header-menu ul li a {
+		color: var(--text-color);
+	}
+}
